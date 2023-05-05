@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
+/* navbar css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import "./index.css";
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 16px;
+  background: var(--head);
+  /* first elements on left side, second elements on right side */
+  /* flex-direction: row; */
+  /* first elements on right side, second elements on left side */
 }
 
-.App-link {
-  color: #61dafb;
+
+ul {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+li {
+  margin: 0;
+  padding: 0
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--a-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: 0.3s;
+  /* right align text */
+  text-align: right;
+
+  display: block;
+  
+}
+
+nav a:hover {
+  color: var(--a-hover-color);
+  transition: 0.3s;
+}
+
+nav a::before {
+  /* move it down a bit */
+  content: "";
+  display: block;
+  height: 8px;
+  background: var(--a-color);
+  position: relative;
+  width: 0%;
+}
+
+
+h1 {
+  color: var(--h1-color)
+}
+
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px);
+  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+.text-right {
+  float: right;
+  margin: 0 0 1em 1em;
+  margin-right: 40px;
+}
+
+.flyfromright {
+  /* fly in from the right */
+  animation: flyfromright 1s ease-in-out;
+}
+
+
+@keyframes flyfromright {
+  0% {
+    transform: translateX(100%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(0);
   }
+}
+
+.filler {
+  height: 100px;
+  width: 100%;
+  padding-bottom: 30px;
 }

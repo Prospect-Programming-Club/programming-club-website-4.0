@@ -1,0 +1,86 @@
+@import "../../index.css";
+
+header {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: calc(1rem + 30px);
+  padding-bottom: 8rem;
+  background-size: cover;
+  background-attachment: scroll;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://3.files.edl.io/96ec/21/07/09/174757-05d128e8-29d5-48ce-bfa0-a00d356462bc.jpeg) center no-repeat; */
+  background: var(--head);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  border-bottom: var(--head-bottom);
+}
+
+.header-content {
+  /* flex on header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* align flex in center */
+  padding-left: 1rem;
+
+}
+
+.header-h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--head-text);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header-p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--head-text);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
+.about-h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--h1-color);
+  margin-bottom: 1rem;
+  /* move slightly to the right */
+  margin-left: 2rem;
+}
+
+.abouttext {
+  color: var(--h1-color);
+  margin-top: -30px;
+}
+
+.about-link {
+  color: var(--a-color);
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.about-link:hover {
+  color: var(--a-hover-color);
+  transition: 0.3s;
+}
+
+.logo {
+  /* circle */
+  border-radius: 50%;
+  /* size */
+  width: 100px;
+  height: 100px;
+  
+}
+
+.contact-p {
+  color: var(--h1-color);
+  font-size: 1.5rem;
+}

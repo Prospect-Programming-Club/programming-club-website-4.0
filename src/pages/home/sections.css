@@ -1,0 +1,36 @@
+@import "../../index.css";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  padding-bottom: 10rem;
+  border-bottom: var(--head-bottom);
+}
+
+.section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--h1-color);
+  /* align center */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.section p {
+  color: var(--h1-color);
+  font-size: 17px;
+  max-width: 800px;
+}
+
+.exem {
+  max-width: none;
+  margin-top: 1rem;
+}

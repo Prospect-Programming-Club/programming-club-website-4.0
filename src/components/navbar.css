@@ -1,0 +1,27 @@
+@import "../index.css";
+
+.displayMode {
+  /* delete button border and background */
+  border: none;
+  border-radius: 50%;
+  background: none;
+  width: 40px;
+  height: 40px;
+  
+  /* transition */
+  transition: 0.3s;
+
+  color: var(--display-button);
+  /* move to left side of flex */
+  margin-right: auto;
+}
+
+.displayMode:hover {
+  /* add background color */
+  background: var(--display-button-hover);
+  transition: 0.3s;
+  
+  /* cursor */
+  cursor: pointer;
+}
+
