@@ -8,14 +8,12 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-let env = 'prod'
 
-let url = window.location.href;
 
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename = {url}>
+    <BrowserRouter>
     <App />
     </BrowserRouter>
   </React.StrictMode>
